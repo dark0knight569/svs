@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners | Siddhivinayak Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="build-in-loader">SIDDHIVINAYAK <br><span>SERVICES</span></div>
+    </div>
+
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">SIDDHIVINAYAK <span>SERVICES</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="services standalone-page">
+        <div class="container">
+            
+            <div id="main-grid-container">
+                <h2 class="section-title">Authorized Support Partners</h2>
+                <div class="grid">
+                    <div class="card brand-card" onclick="showProducts('Geionix')" style="border-top-color: #00838F;">
+                        <h3 style="color: #00838F;">Geionix</h3>
+                        <p>Monitors & Storage</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Digisol')" style="border-top-color: #2E7D32;">
+                        <h3 style="color: #2E7D32;">Digisol</h3>
+                        <p>Networking</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Intel')" style="border-top-color: #1565C0;">
+                        <h3 style="color: #1565C0;">Intel</h3>
+                        <p>Processors & Boards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Intex')" style="border-top-color: #C62828;">
+                        <h3 style="color: #C62828;">Intex</h3>
+                        <p>UPS & Multimedia</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Gigabyte')" style="border-top-color: #E65100;">
+                        <h3 style="color: #E65100;">Gigabyte</h3>
+                        <p>Motherboards & GPUs</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Adata')" style="border-top-color: #6A1B9A;">
+                        <h3 style="color: #6A1B9A;">Adata</h3>
+                        <p>Gaming RAM & SSDs</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('EVM')" style="border-top-color: #00695C;">
+                        <h3 style="color: #00695C;">EVM</h3>
+                        <p>NVMe & RAM</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('iBall')" style="border-top-color: #AD1457;">
+                        <h3 style="color: #AD1457;">iBall</h3>
+                        <p>Peripherals</p>
+                    </div>
+                    
+                    <div class="card brand-card hub-card kaizen-hub" onclick="showHubBrands('kaizen')">
+                        <h3>Kaizen Info Serve</h3>
+                        <p>Multi-Brand Support</p>
+                    </div>
+
+                    <div class="card brand-card hub-card vishwas-hub" onclick="showHubBrands('vishwas')">
+                        <h3>Vishwas Multitech</h3>
+                        <p>Authorized Service Hub</p>
+                    </div>
+
+                    <div class="card brand-card hub-card maara-hub" onclick="showHubBrands('maara')">
+                        <h3>MAARS E Services</h3>
+                        <p>Premium Audio & Tech</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="hub-brands-display" class="hidden">
+                <button class="back-btn" onclick="backToMainGrid()">
+                    <i class="fas fa-arrow-left"></i> Back to Main Partners
+                </button>
+                <h2 id="hub-title" class="section-title">--</h2>
+                <div id="hub-brand-grid" class="grid">
+                    </div>
+            </div>
+
+            <div id="product-display" class="hidden">
+                <button class="back-btn" id="product-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back
+                </button>
+                <h2 id="selected-brand-title" class="section-title" style="margin-bottom: 2rem;">--</h2>
+                <div id="product-list" class="grid">
+                    </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Siddhivinayak Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
