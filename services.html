@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Partners | Siddhivinayak Services</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="loader">
+        <div class="build-in-loader">SIDDHIVINAYAK <br><span>SERVICES</span></div>
+    </div>
+
+    <header class="sticky-header">
+        <nav>
+            <div class="logo">SIDDHIVINAYAK <span>SERVICES</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-active">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="services" class="services standalone-page">
+        <div class="container">
+            
+            <div id="main-grid-container">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Authorised Service Partner</h2>
+                
+                <div class="search-container reveal">
+                    <input type="text" id="brand-search" placeholder="Search for a brand... (e.g., Intel, Corsair)" onkeyup="filterBrands()">
+                    <i class="fas fa-search search-icon"></i>
+                </div>
+
+                <div class="grid" id="brand-grid">
+                    <div class="card brand-card" onclick="showProducts('Geionix')" style="border-top-color: #00838F;">
+                        <h3 style="color: #00838F;">Geionix</h3>
+                        <p>Monitors & Storage</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Digisol')" style="border-top-color: #2E7D32;">
+                        <h3 style="color: #2E7D32;">Digisol</h3>
+                        <p>Networking</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Intel')" style="border-top-color: #1565C0;">
+                        <h3 style="color: #1565C0;">Intel</h3>
+                        <p>Processors & Boards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Intex')" style="border-top-color: #C62828;">
+                        <h3 style="color: #C62828;">Intex</h3>
+                        <p>UPS & Multimedia</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Gigabyte')" style="border-top-color: #E65100;">
+                        <h3 style="color: #E65100;">Gigabyte</h3>
+                        <p>Motherboards & GPUs</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Adata')" style="border-top-color: #6A1B9A;">
+                        <h3 style="color: #6A1B9A;">Adata</h3>
+                        <p>Gaming RAM & SSDs</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('EVM')" style="border-top-color: #00695C;">
+                        <h3 style="color: #00695C;">EVM</h3>
+                        <p>NVMe & RAM</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('iBall')" style="border-top-color: #AD1457;">
+                        <h3 style="color: #AD1457;">iBall</h3>
+                        <p>Peripherals</p>
+                    </div>
+
+                    <div class="card brand-card" onclick="showProducts('Biostar')" style="border-top-color: #C62828;">
+                        <h3 style="color: #C62828;">Biostar</h3>
+                        <p>Motherboards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('BRYT')" style="border-top-color: #8E24AA;">
+                        <h3 style="color: #8E24AA;">BRYT</h3>
+                        <p>Memory & Storage</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Cooler Master')" style="border-top-color: #5D4037;">
+                        <h3 style="color: #5D4037;">Cooler Master</h3>
+                        <p>Components & Peripherals</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Corsair')" style="border-top-color: #F9A825;">
+                        <h3 style="color: #F9A825;">Corsair</h3>
+                        <p>Gaming Components</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Crucial')" style="border-top-color: #1565C0;">
+                        <h3 style="color: #1565C0;">Crucial</h3>
+                        <p>Storage & RAM</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Creative')" style="border-top-color: #E64A19;">
+                        <h3 style="color: #E64A19;">Creative</h3>
+                        <p>Audio Solutions</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('GALAX')" style="border-top-color: #00838F;">
+                        <h3 style="color: #00838F;">GALAX</h3>
+                        <p>GPUs & Motherboards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Inno 3D')" style="border-top-color: #558B2F;">
+                        <h3 style="color: #558B2F;">Inno 3D</h3>
+                        <p>Graphic Cards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Lexar')" style="border-top-color: #283593;">
+                        <h3 style="color: #283593;">Lexar</h3>
+                        <p>Flash Memory & Storage</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Mercury')" style="border-top-color: #7B1FA2;">
+                        <h3 style="color: #7B1FA2;">Mercury</h3>
+                        <p>Components & Peripherals</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Micron')" style="border-top-color: #0277BD;">
+                        <h3 style="color: #0277BD;">Micron</h3>
+                        <p>RAM & SSDs</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Nextron')" style="border-top-color: #9E9D24;">
+                        <h3 style="color: #9E9D24;">Nextron</h3>
+                        <p>PC Components</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Sapphire')" style="border-top-color: #C2185B;">
+                        <h3 style="color: #C2185B;">Sapphire</h3>
+                        <p>Graphic Cards</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Syrotech')" style="border-top-color: #F57F17;">
+                        <h3 style="color: #F57F17;">Syrotech</h3>
+                        <p>Networking</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Verbatim')" style="border-top-color: #4E342E;">
+                        <h3 style="color: #4E342E;">Verbatim</h3>
+                        <p>Storage & Accessories</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Zotac')" style="border-top-color: #FBC02D;">
+                        <h3 style="color: #FBC02D;">Zotac</h3>
+                        <p>Graphic Cards</p>
+                    </div>
+
+                    <div class="card brand-card" onclick="showProducts('Blue Print')" style="border-top-color: #0288D1;">
+                        <h3 style="color: #0288D1;">Blue Print</h3>
+                        <p>Thermal Printer</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Cellecore')" style="border-top-color: #C62828;">
+                        <h3 style="color: #C62828;">Cellecore</h3>
+                        <p>Home Appliances</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Kratos')" style="border-top-color: #AD1457;">
+                        <h3 style="color: #AD1457;">Kratos</h3>
+                        <p>Mobile Accessories</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Portonics')" style="border-top-color: #1565C0;">
+                        <h3 style="color: #1565C0;">Portonics</h3>
+                        <p>Audio Equipment</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Snapup')" style="border-top-color: #FF8F00;">
+                        <h3 style="color: #FF8F00;">Snapup</h3>
+                        <p>Smart Accessories</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Tag')" style="border-top-color: #689F38;">
+                        <h3 style="color: #689F38;">Tag</h3>
+                        <p>Computer Peripherals</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Team Group')" style="border-top-color: #8E24AA;">
+                        <h3 style="color: #8E24AA;">Team Group</h3>
+                        <p>Memory & SSD</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Rapoo')" style="border-top-color: #37474F;">
+                        <h3 style="color: #37474F;">Rapoo</h3>
+                        <p>Peripherals</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Lappies')" style="border-top-color: #3949AB;">
+                        <h3 style="color: #3949AB;">Lappies</h3>
+                        <p>Laptop Spares</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Toreti')" style="border-top-color: #00897B;">
+                        <h3 style="color: #00897B;">Toreti</h3>
+                        <p>Monitors</p>
+                    </div>
+
+                    <div class="card brand-card" onclick="showProducts('Pebble')" style="border-top-color: #5D4037;">
+                        <h3 style="color: #5D4037;">Pebble</h3>
+                        <p>Smart Wearables</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Philips')" style="border-top-color: #1976D2;">
+                        <h3 style="color: #1976D2;">Philips</h3>
+                        <p>Audio & Electronics</p>
+                    </div>
+                    <div class="card brand-card" onclick="showProducts('Truke')" style="border-top-color: #388E3C;">
+                        <h3 style="color: #388E3C;">Truke</h3>
+                        <p>TWS Earbuds</p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="product-display" class="hidden">
+                <button class="back-btn" id="product-back-btn">
+                    <i class="fas fa-arrow-left"></i> Back to Brands
+                </button>
+                <h2 id="selected-brand-title" class="section-title" style="margin-bottom: 1rem;">--</h2>
+                
+                <div id="customer-care-section" style="margin-bottom: 3rem; text-align: center; padding: 2.5rem 2rem; background: var(--card-bg); border-radius: 20px; box-shadow: 0 10px 40px rgba(0,0,0,0.05); border: 1px solid rgba(0,0,0,0.05);">
+                    <h3 style="color: var(--text-dark); margin-bottom: 1rem; font-size: 2rem;">Customer Care & Support</h3>
+                    <p style="color: var(--text-muted); margin-bottom: 1.5rem; font-size: 1.1rem;">Tap the button below to directly contact support for this brand.</p>
+                    
+                    <a id="brand-care-number" href="#" class="btn-primary" style="font-size: clamp(1.2rem, 4vw, 1.8rem); padding: 1rem 2.5rem; display: inline-block; margin-top: 0; margin-bottom: 1.5rem; box-shadow: 0 8px 25px rgba(0,0,0,0.1);">
+                        <i class="fas fa-headset" style="margin-right: 10px;"></i> <span>--</span>
+                    </a>
+
+                    <div style="background: rgba(0,0,0,0.03); padding: 1.2rem; border-radius: 10px; display: inline-block; width: 100%; max-width: 500px; margin: 0 auto; text-align: center;">
+                        <p style="font-weight: 700; margin-bottom: 0.5rem; color: var(--text-dark); display: flex; align-items: center; justify-content: center; gap: 8px;">
+                            <i class="fas fa-envelope" style="color: #E6B800;"></i> Support Email & Notes
+                        </p>
+                        <p id="brand-care-email" style="color: var(--text-muted); font-size: 0.95rem; line-height: 1.5; word-wrap: break-word;">--</p>
+                    </div>
+                </div>
+
+                <div id="product-list" class="grid">
+                    </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Siddhivinayak Services. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
